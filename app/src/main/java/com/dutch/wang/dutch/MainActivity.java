@@ -229,6 +229,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         setInfo();
+        listView.setAdapter(new ListViewAdapter(mlistInfo));
         super.onResume();
 
     }
